@@ -13,7 +13,7 @@
 
             "mark": {
             "type": "line",
-            "opacity": 0.4
+            "point": true
         },
         
 
@@ -23,7 +23,11 @@
             "scale": {
                 "domain": [90, 100]
             } 
-        }
+        },
+        "tooltip": [
+            {"field": "year"},
+            {"field": "percentage population"}
+        ]
     }
 },
 
@@ -33,7 +37,7 @@
 
     "mark": {
         "type": "line",
-        "point": true
+        "opacity": 0.8
     },
 
     "params": [
