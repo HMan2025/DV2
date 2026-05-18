@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Rate of change in total unemployment",
+  "description": "percentage change in Malaysian unemployment",
+  "data": {
+    "url": ""
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "a", "type": "nominal",
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelAngle": 0,
+        "labelPadding": 4
+      }
+    },
+    "y": {
+      "field": "b", "type": "quantitative",
+      "axis": {
+        "gridColor": {
+          "condition": {"test": "datum.value === 0", "value": "black"},
+          "value": "#ddd"
+        }
+      }
+    }
+  }
+}
