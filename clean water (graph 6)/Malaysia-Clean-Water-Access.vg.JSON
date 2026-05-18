@@ -1,0 +1,12 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Clean Water Accessibility" },
+    "data": {
+        "url": "Malaysia-Clean-Water-Access-Percent-of-Population-2026-05-12-14-10.csv"
+    },
+    "mark": "line",
+    "encoding": {
+        "x": { "field": "year", "type": "temporal" },
+        "y": { "field": "population(%)", "type": "quantitative" }
+    }
+}
