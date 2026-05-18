@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Electricity Accessibility" },
+    "description": "Electricity accessibility in Malaysia",
+    "data": {
+        "url": "electricity.csv",
+
+        "format":{
+            "type": "csv",
+            "parse": {
+                "year": "number",
+                "Electricity Access": "number"
+            }
+        }
+    },
+
+    "mark": {
+        "type": "line",
+        "point": true
+    },
+
+    "encoding": {
+        "x": { "field": "year", "type": "quantitative" },
+        "y": { "field": "Electricity Access", "type": "quantitative" }
+    }
+}

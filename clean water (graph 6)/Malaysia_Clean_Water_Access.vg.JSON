@@ -1,0 +1,64 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Clean Water Accessibility" },
+    "description": "Clean water accessibility in Malaysia",
+    "data": {
+        "url": "water2.csv"
+    },
+
+    "vconcat": [
+        {
+            "width": 500,
+            "height": 120,
+
+            "mark": {
+            "type": "line",
+            "opacity": 0.4
+        },
+        
+
+        "encoding": {
+            "x": { "field": "year", "type": "ordinal" },
+            "y": { "field": "percentage population", "type": "quantitative",
+            "scale": {
+                "domain": [90, 100]
+            } 
+        }
+    }
+},
+
+{
+    "width": 500,
+    "height": 200,
+
+    "mark": {
+        "type": "line",
+        "point": true
+    },
+
+    "params": [
+        {
+        "name": "brush",
+        "select": {
+            "type": "interval",
+            "encodings": ["x"]
+        }
+    }
+],
+"encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+
+        "y": {
+          "field": "percentage population",
+          "type": "quantitative",
+          "scale": {
+            "domain": [0, 100]
+          }
+        }
+      }
+    }
+  ]
+}
