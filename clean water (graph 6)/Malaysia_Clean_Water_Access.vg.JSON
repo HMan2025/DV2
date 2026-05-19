@@ -18,7 +18,7 @@
         
 
         "encoding": {
-            "x": { "field": "year", "type": "ordinal" },
+            "x": { "field": "year", "type": "temporal" },
             "y": { "field": "percentage population", "type": "quantitative",
             "scale": {
                 "domain": [90, 100]
@@ -52,7 +52,7 @@
 "encoding": {
         "x": {
           "field": "year",
-          "type": "ordinal"
+          "type": "temporal"
         },
 
         "y": {

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "url": "unem_rate.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "year", "type": "temporal", "axis": {"labelAngle": 0}},
+    "y": {"field": "unemployment rate", "type": "quantitative",
+            "axis":{
+                "title": "unemployment rate (%)"
+            }}
+  }
+}

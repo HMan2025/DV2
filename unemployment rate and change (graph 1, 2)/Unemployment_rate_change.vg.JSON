@@ -3,12 +3,12 @@
   "title": "Rate of change in total unemployment",
   "description": "percentage change in Malaysian unemployment",
   "data": {
-    "url": ""
+    "url": "unem_rate_change.csv"
   },
   "mark": "bar",
   "encoding": {
     "x": {
-      "field": "a", "type": "nominal",
+      "field": "year", "type": "temporal",
       "axis": {
         "domain": false,
         "ticks": false,
@@ -17,7 +17,7 @@
       }
     },
     "y": {
-      "field": "b", "type": "quantitative",
+      "field": "unemployment rate change", "type": "quantitative",
       "axis": {
         "gridColor": {
           "condition": {"test": "datum.value === 0", "value": "black"},
