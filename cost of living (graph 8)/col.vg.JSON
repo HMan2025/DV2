@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": { "text": "Malaysia cost of living index (2023)" },
+  "description": "Malaysian cost of living.",
+  "width": 750,
+  "data": {
+    "url": "col.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "state", "type": "nominal", "axis": {"labelAngle": 55}},
+    "y": {"field": "cost of living index", "type": "quantitative"}
+  }
+}

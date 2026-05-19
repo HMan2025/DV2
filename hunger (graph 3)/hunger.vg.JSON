@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "population experiencing hunger",
+  "description": "percentage of population going hungry.",
+  "width": 300,
+  "data": {"url": "hunger.csv"},
+  "mark": {    
+    "type": "line",
+    "point": {
+      "filled": false,
+      "fill": "white"
+    }},
+  "encoding": {
+    "x": {"field": "year", "type": "temporal"},
+    "y": {"field": "population experiencing hunger", "type": "quantitative", 
+    "axis": {"title": "population experiencing hunger (%)"}},
+    "tooltip": [
+        {"field": "year", "type": "temporal", "format": "%Y"},
+        {"field": "population experiencing hunger"}
+    ]
+  }
+}
