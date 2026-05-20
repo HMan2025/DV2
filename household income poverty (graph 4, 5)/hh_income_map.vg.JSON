@@ -44,7 +44,7 @@
         "title": "mean income (RM)",
 
         "scale": {
-            "scheme": "viridis"
+            "scheme": "blues"
         }
     },
     "tooltip": [

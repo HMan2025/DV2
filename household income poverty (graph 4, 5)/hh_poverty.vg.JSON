@@ -11,20 +11,23 @@
     }
   ],
   "mark": "bar",
+
   "encoding": {
     "x": {"field": "state", "type": "nominal",
         "axis": {
             "labelAngle": -45
         }
     },
-    "y": {"field": "value", "type": "quantitative"},
+
     "xOffset": {"field": "category"},
-    "color": {"field": "category", "type": "nominal"},
+    "y": {"field": "value", "type": "quantitative", "stack": null},
+    
+    "color": {"field": "category"},
 
     "tooltip": [
-        {"field": "state"},
+        {"field": "state", "type": "nominal"},
         {"field": "category"},
-        {"field": "value"}
+        {"field": "value", "type": "quantitative"}
     ]
   }
 }
