@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300, "height": 200,
+  "data": {"url": "rural_urban.csv"},
+
+  "transform": [{
+    "fold": ["rural population", "urban population"],
+    "as": ["category", "population"]
+  }],
+
+  "layer": [
+    {
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "year", "type": "temporal",
+      "axis": {"format": "%Y"}
+    },
+    "y": {
+      "field": "population", "type": "quantitative",
+      "stack": "zero"
+    },
+    "color": {
+      "field": "category", "type": "nominal",
+      "scale": {"scheme": "tableau10"}
+    },
+
+    "tooltip": [
+      { "field": "year" , "type": "temporal", "format": "%Y"},
+      { "field": "category" },
+      { "field": "population" }
+    ]
+  }
+},
+
+{
+    "mark": {
+      "type": "line",
+      "color": "black",
+      "strokeWidth": 10,
+      "opacity": 0
+    },
+
+    "encoding": {
+      "x": {"field": "year", "type": "temporal"},
+      "y": {
+        "aggregate": "sum",
+        "field": "population"
+      },
+    "tooltip": [
+      { "field": "year" , "type": "temporal", "format": "%Y"},
+      { "aggregate": "sum", "field": "population", "title": "total population" }
+    ]}
+  }
+]}

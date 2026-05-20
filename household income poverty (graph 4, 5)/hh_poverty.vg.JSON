@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "hh_poverty.csv" 
+  },
+
+  "transform": [
+    {
+        "fold": ["absolute poverty", "hardcore poverty", "relative poverty"],
+        "as": ["category", "value"]
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "state", "type": "nominal",
+        "axis": {
+            "labelAngle": -45
+        }
+    },
+    "y": {"field": "value", "type": "quantitative"},
+    "xOffset": {"field": "category"},
+    "color": {"field": "category", "type": "nominal"},
+
+    "tooltip": [
+        {"field": "state"},
+        {"field": "category"},
+        {"field": "value"}
+    ]
+  }
+}
