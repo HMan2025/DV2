@@ -4,7 +4,7 @@
   "description": "Malaysian cost of living.",
   "width": 750,
   "data": {
-    "url": "col.csv"
+    "url": "cost of living (graph 8)/col.csv"
   },
   "mark": "bar",
   "encoding": {

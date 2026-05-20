@@ -18,5 +18,99 @@
     <!-- CSS file -->
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 
-
 </head>
+
+<body>
+
+  <div class="page">
+
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="vis1"></div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="vis2"></div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="vis3"></div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <div id="vis4"></div>
+      </div>
+
+      <div class="pure-u-1-2">
+        <div id="vis5"></div>
+      </div>
+
+      <div class="pure-u-1-1">
+        <div id="vis6"></div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <div id="vis7"></div>
+      </div>
+
+      <div class="pure-u-1-3">
+        <div id="vis8"></div>
+      </div>
+
+      <div class="pure-u-1-3">
+        <div id="vis9"></div>
+      </div>
+    </div>
+
+  </div>
+
+    <script type="text/javascript">
+    var specVis1 = "./household income poverty (graph 4, 5)/hh_poverty.vg.JSON";
+    var specVis2 = "./household income poverty (graph 4, 5)/hh_income_map.vg.JSON";
+    var specVis3 = "./hunger (graph 3)/hunger.vg.JSON";
+    var specVis4 = "./clean water (graph 6)/Malaysia_Clean_Water_Access.vg.JSON";
+    var specVis5 = "./electricity access (graph 7)/Malaysia_Electricity_Access.vg.JSON";
+    var specVis6 = "./cost of living (graph 8)/col.vg.JSON";
+    var specVis7 = "./unemployment rate and change (graph 1, 2)/Unemployment_rate.vg.JSON";
+    var specVis8 = "./unemployment rate and change (graph 1, 2)/Unemployment_rate_change.vg.JSON";
+    var specVis9 = "./rural and urban (graph 9)/rural_urban_population.vg.JSON";
+    var specVis10 = "";
+
+    vegaEmbed('#vis1', specVis1, { "actions": false });
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    vegaEmbed('#vis7', specVis7, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    vegaEmbed('#vis8', specVis8, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    vegaEmbed('#vis9', specVis9, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    vegaEmbed('#vis10', specVis10, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+  </script>
+</body>

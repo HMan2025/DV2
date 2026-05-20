@@ -3,9 +3,18 @@
     "title": { "text": "Clean Water Accessibility" },
     "description": "Clean water accessibility in Malaysia",
     "data": {
-        "url": "water2.csv"
+        "url": "clean water (graph 6)/water2.csv"
     },
 
+        "params": [
+        {
+        "name": "brush",
+        "select": {
+            "type": "interval",
+            "encodings": ["x"]
+        }
+    }
+],
     "vconcat": [
         {
             "width": 500,
@@ -40,15 +49,6 @@
         "opacity": 0.8
     },
 
-    "params": [
-        {
-        "name": "brush",
-        "select": {
-            "type": "interval",
-            "encodings": ["x"]
-        }
-    }
-],
 "encoding": {
         "x": {
           "field": "year",
@@ -62,7 +62,14 @@
             "domain": [0, 100]
           }
         }
-      }
+      },
+      "transform": [
+        {
+          "filter": {
+            "param": "brush"
+          }
     }
   ]
+}
+    ]
 }

@@ -3,7 +3,7 @@
     "title": { "text": "Electricity Accessibility in Malaysia" },
     "description": "Electricity accessibility in Malaysia",
     "data": {
-        "url": "electricity2.csv"
+        "url": "electricity access (graph 7)/electricity2.csv"
     },
 
     "vconcat": [

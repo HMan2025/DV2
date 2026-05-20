@@ -3,7 +3,7 @@
   "title": "population experiencing hunger",
   "description": "percentage of population going hungry.",
   "width": 300,
-  "data": {"url": "hunger.csv"},
+  "data": {"url": "hunger (graph 3)/hunger.csv"},
   "mark": {    
     "type": "line",
     "point": {

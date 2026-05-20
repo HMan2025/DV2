@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
   "data": {
-    "url": "unem_rate.csv"
+    "url": "unemployment rate and change (graph 1, 2)/unem_rate.csv"
   },
   "mark": "bar",
   "encoding": {
